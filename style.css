@@ -30,6 +30,9 @@ body, html {
     html, body {
         overflow-x: hidden;
         position: relative
+        -webkit-sticky border-box;
+        -moz-box-sizing:border-box;
+             box-sizing:border-box;
     }
 
     /* Ensure all elements fit within the viewport */
@@ -168,6 +171,7 @@ body {
     background-size: 600% 600%;
     animation: gradientBackground 15s ease infinite;
     position: relative
+    
 }
 
 @keyframes gradientBackground {

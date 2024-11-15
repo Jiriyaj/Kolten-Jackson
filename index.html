@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolten Jackson</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+
+</head>
+<body>
+    <div class="particle-container">
+        <!-- Generate particles manually or with JavaScript for dynamic creation -->
+        <div class="particle" style="top: 10%; left: 20%;"></div>
+        <div class="particle" style="top: 50%; left: 30%;"></div>
+        <div class="particle" style="top: 80%; left: 60%;"></div>
+        <div class="particle" style="top: 30%; left: 80%;"></div>
+        <!-- Add more particles as needed -->
+    </div>
+    <section id="home-page" class="hero-section">
+        <!-- Home section content -->
+<div class="content">
+    </div>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <a href="/" class="logo_toggle"></a>
+                    <div class="logo-text">Kolten Jackson</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav>
+                        <ul class="navlinks">
+                            <li><a href="#home-page">Home</a></li>
+                            <li><a href="#portfolio-page">Portfolio</a></li>
+                            <li><a href="#blog-page">Blog</a></li>
+                            <li><a href="#contact-page">Contact</a></li>
+                        </ul>
+                    </nav>                    
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="DF07A4F6-C1F2-4F00-BF30-78D7A350233C_1_201_a.jpeg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm a <span class="input"></span></h5>
+
+                    <h1>Kolten Jackson</h1>
+                    <p>A passionate and driven software engineer with a focus on creating innovative, scalable, and efficient solutions. With experience spanning various technologies and industries, I specialize in building high-quality software that meets user needs and exceeds expectations.
+                    </p>
+
+                    <div class="btn-group">
+                        <a href="#portfolio-page" class="btn active">Projects</a>
+                        <a href="#contact-page" class="btn">Contact Me</a>
+                     </div>
+                     
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/profile.php?id=61563338075558"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/kolten-jackson-146825337/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                 </div>
+            </div>
+            </div>
+        </div>
+     </div>
+
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["FullStack Developer","UX Designer","Software Developer"],
+            typedSpeed:50,
+            backSpeed:40,
+            loop:true
+        })
+     </script>
+    </section>
+    <div class="divider"></div>
+<section id="portfolio-page" class="portfolio-section">
+    <!-- Portfolio Title Positioned Above Sidebar and Grid -->
+    <header class="portfolio-header">
+        <div class="portfolio-content-wrapper"></div>
+        <h2 class="portfolio-title">Portfolio</h2>
+    </header>
+    <!-- Left Sidebar -->
+    <div class="portfolio-sidebar">
+        <div class="skills-list">
+            <h3>Skills & Qualifications</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>C</li>
+                <li>C#</li>
+                <li>Python</li>
+                <li>Harvard's CS50 Certified</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </div>
+    </div>
+    <!-- Portfolio Grid for Cards -->
+    <div class="portfolio-grid">
+        <div class="portfolio-item">
+            <img src="project1.jpg" alt="Project 1">
+            <div class="overlay">
+                <h3>Project Title 1</h3>
+                <p>Coming Soon!.</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="project2.jpg" alt="Project 2">
+            <div class="overlay">
+                <h3>Project Title 2</h3>
+                <p>Coming Soon!</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="project3.jpg" alt="Project 3">
+            <div class="overlay">
+                <h3>Project Title 3</h3>
+                <p>Coming Soon!</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="project4.jpg" alt="Project 4">
+            <div class="overlay">
+                <h3>Project Title 4</h3>
+                <p>Coming Soon!</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="project5.jpg" alt="Project 5">
+            <div class="overlay">
+                <h3>Project Title 5</h3>
+                <p>Coming Soon!</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="project6.jpg" alt="Project 6">
+            <div class="overlay">
+                <h3>Project Title 6</h3>
+                <p>Coming Soon!</p>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="divider"></div>
+<!-- Blog Section -->
+<section id="blog-page" class="blog-section">
+    <header class="blog-header">
+        <h2 class="blog-title">Blogs</h2>
+        <p class="blog-description">Explore my latest insights, tutorials, and stories.</p>
+    </header>
+    <div class="blog-entries">
+        <!-- Blog Entry 1 -->
+        <div class="blog-entry">
+            <h3 class="blog-entry-title">Finance Blog</h3>
+            <p class="blog-entry-snippet">Coming Soon!</p>
+            <a href="#" class="blog-read-more">Read More</a>
+        </div>
+
+        <!-- Blog Entry 2 -->
+        <div class="blog-entry">
+            <h3 class="blog-entry-title">Travel Blog</h3>
+            <p class="blog-entry-snippet">Coming Soon!</p>
+            <a href="#" class="blog-read-more">Read More</a>
+        </div>
+
+        <!-- Add more blog entries as needed -->
+    </div>
+</section>
+<div class="divider"></div>
+<!-- Contact Me Section -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<section id="contact-page" class="contact-section">
+    <header class="contact-header">
+        <h2 class="contact-title">Contact Me</h2>
+        <p class="contact-description">Have any questions? Feel free to reach out.</p>
+    </header>
+    <div class="contact-form">
+        <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>        
+    </div>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "w8GzCox-PvoROy77z",
+  });
+})();
+</script>
+</section>
+</header>
+</body>
+</html>

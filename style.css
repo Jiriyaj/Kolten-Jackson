@@ -26,38 +26,40 @@ body, html {
     }
 }
 @media (max-width: 768px) {
+    /* Prevent horizontal scrolling */
     html, body {
         overflow-x: hidden;
     }
 
+    /* Ensure all elements fit within the viewport */
     * {
-        max-width: 100%;
         box-sizing: border-box;
+        max-width: 100%;
     }
 
+    /* Fix container sizes */
     .container {
         padding: 0 16px;
-        margin: 0 auto;
         width: 100%;
+        margin: 0 auto;
     }
 
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .skills ul li {
-        font-size: 1rem;
-        padding: 8px;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
+    /* Handle images and media */
     img, video {
         max-width: 100%;
         height: auto;
+    }
+
+    /* Prevent overflowing positioned elements */
+    .fixed-element, .absolute-element {
+        left: 0;
+        right: 0;
+        max-width: 100%;
+    }
+
+    /* Responsive grid */
+    .portfolio-grid {
+        grid-template-columns: 1fr; /* Single column layout */
     }
 }
 

@@ -3,12 +3,17 @@ body, html {
     font-family: 'Poppins', sans-serif;
     height: 100%;
     overflow-y: auto;
+    overflow-x: hidden; /* Prevent horizontal scrolling globally */
+    width: 100%;
     background: linear-gradient(270deg, #772dd1, #222, #444);
     background-size: 600% 600%;
     animation: gradientBackground 15s ease infinite;
     scroll-behavior: smooth; /* Smooth scrolling between sections */
 }
-
+* {
+    max-width: 100%; /* Constrain all elements to the screen width */
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+}
 @keyframes gradientBackground {
     0% {
         background-position: 0% 50%;
@@ -243,6 +248,23 @@ nav .navlinks li a{
     justify-content: flex-start; /* Align items to the left side */
     align-items: center;
     padding-top: 4rem;
+    max-width: 100%; /* Ensure container doesn’t exceed screen width */
+    margin: 0 auto; /* Center-align content */
+    padding: 0 16px; /* Add padding for spacing */
+}
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word; /* Break long words */
+    white-space: normal; /* Prevent text from overflowing */
+}
+.fixed-element {
+    left: 0;
+    right: 0;
+    max-width: 100%;
 }
 
 .container {

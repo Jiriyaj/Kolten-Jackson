@@ -29,6 +29,7 @@ body, html {
     /* Prevent horizontal scrolling */
     html, body {
         overflow-x: hidden;
+        position: relative
     }
 
     /* Ensure all elements fit within the viewport */
@@ -166,6 +167,7 @@ body {
     background: linear-gradient(270deg, #772dd1, #222, #444);
     background-size: 600% 600%;
     animation: gradientBackground 15s ease infinite;
+    position: relative
 }
 
 @keyframes gradientBackground {

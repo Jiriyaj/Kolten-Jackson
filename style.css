@@ -25,6 +25,44 @@ body, html {
         background-position: 0% 50%;
     }
 }
+@media (max-width: 768px) {
+    /* Prevent horizontal scrolling */
+    html, body {
+        overflow-x: hidden;
+    }
+
+    /* Constrain all elements within the viewport */
+    * {
+        max-width: 100%;
+        box-sizing: border-box; /* Ensure padding and border are included in width calculations */
+    }
+
+    /* Adjust container for mobile screens */
+    .container {
+        padding: 0 16px; /* Add padding for spacing */
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    /* Handle overflowing text */
+    h1, h2, h3, h4, h5, h6, p {
+        word-wrap: break-word;
+        white-space: normal;
+    }
+
+    /* Images and videos should fit within mobile viewport */
+    img, video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Fix for fixed or absolute positioned elements */
+    .fixed-element, .absolute-element {
+        max-width: 100%;
+        left: 0;
+        right: 0;
+    }
+}
 
 /* Section Layout */
 .first-page {
